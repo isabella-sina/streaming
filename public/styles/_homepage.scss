@@ -1,0 +1,64 @@
+
+//MAIN
+
+
+.main{
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    height: 70vh;
+    padding: 40px 2.5vw;
+    color: #fff;
+    background-color: #181818;
+    //background-image: linear-gradient(to bottom, transparent, #181818), url("https://image.tmdb.org/t/p/original/ehumsuIBbgAe1hg343oszCLrAfI.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.homepage{
+    height: 50vh;
+    border-radius: 5px;
+    
+}
+
+
+
+.heading{
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 50px;
+    margin-left: 2vw;
+    margin-top: 40vh;
+}
+
+.heading-info{
+    width: 50%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 2vw;
+    margin-bottom: 5vh;
+}
+
+//movie swiper
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-category{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.movie-list{
+    transform: translateX(2%);
+}
+
+
+
+
