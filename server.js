@@ -7,7 +7,7 @@ let app = express();
 app.use(express.static(initial_path));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(initial_path, "home.html"));
+    res.sendFile(path.join(initial_path, "index.html"));
 })
 
 app.get('/:id', (req, res) =>{
