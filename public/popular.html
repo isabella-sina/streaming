@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streaming</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./styles/styles.css">
   
 </head>
@@ -13,19 +14,22 @@
     
     <!--NAVBAR-->
     <nav class="navbar">
-        <img src="./img/logo.png" class="logo" alt="">
+        <img src="./img/logo.svg" class="logo" alt="">
 
         <div class="navbar-titles">
-            <h3><a href="./home.html">Home</a></h3>
+            <h3><a href="../index.html">Home</a></h3>
             <h3><a href="./popular.html">Popular</a></h3>
             <h3><a href="./new.html">New</a></h3>
         </div>
        
 
         <div class="searchbar">
-            <input type="text" placeholder="Search..">
-            <img src="./img/icons8-search-50.png" alt="">
-            <div class="search-box"></div>
+            <form action="" class="search" id="search-bar" >
+                <input type="search" placeholder="Search movie..." class="search-input">
+                
+                    <i class="fas fa-search" id="search-icon"></i>
+               
+            </form>
         </div>
 
         <div class="join-box">

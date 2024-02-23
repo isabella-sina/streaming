@@ -191,16 +191,6 @@ iframe {
 .swiper-button-next, .swiper-button-prev {
   color: red;
   z-index: 2;
-  position: relative;
-}
-
-.swiper-button-next {
-  top: 80px;
-}
-
-.swiper-button-prev {
-  top: 80px;
-  left: -90vw;
 }
 
 .movie-cards {
@@ -263,11 +253,6 @@ iframe {
   border-radius: 0 0 5px 5px;
 }
 
-#search-icon {
-  font-size: 1.6rem;
-  margin-left: 10px;
-}
-
 .navbar {
   width: 100%;
   height: 60px;
@@ -301,6 +286,8 @@ iframe {
 .fa-search {
   color: #dd0e15;
   margin-right: 10px;
+  font-size: 1.6rem;
+  margin-left: 10px;
 }
 
 .searchbar {
@@ -319,7 +306,7 @@ iframe {
 }
 
 .logo {
-  height: 60%;
+  height: 45px;
 }
 
 .join-box {
