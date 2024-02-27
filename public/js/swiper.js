@@ -1,9 +1,39 @@
 function initializeSwiper(category){
 
     new Swiper(`.swiper${category}`, {
-      slidesPerView: 6,
+      slidesPerView: 1,
       spaceBetween: 5,
-      slidesPerGroup:2,
+      slidesPerGroup:1,
+
+      breakpoints: {
+       
+        
+        480: {
+         slidesPerView: 2,
+         spaceBetween: 10
+        },
+        
+        640: {
+         slidesPerView: 3,
+         spaceBetween: 10
+        },
+       
+        900: {
+            slidesPerView: 4,
+            spaceBetween: 10
+           },
+       
+        1200: {
+        slidesPerView: 5,
+        spaceBetween: 10
+        },
+
+        1600: {
+            slidesPerView: 6,
+            spaceBetween: 10
+            }
+        
+       },
 
       navigation: {
           nextEl: `.swiper${category}-button-next`,
@@ -59,6 +89,7 @@ const makeCards = (id, data_movie_list) => {
             if(item.title.length > 30){
                 title = item.title.substring(0,28) + '...';
             }
+            console.log(location.href);
 
             movieContainer.innerHTML +=  `
             <div class="swiper-slide">

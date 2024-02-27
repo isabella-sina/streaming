@@ -12,32 +12,38 @@
 
 <body>
     
-    <!--NAVBAR-->
-    <nav class="navbar">
-        <img src="./img/logo.svg" class="logo" alt="">
+     <!--NAVBAR-->
+   
+     <header>
+        <nav class="navbar-new">
+            <img src="./img/logo.svg" class="logo" alt="">
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="./popular.html">Popular</a></li>
+                <li><a href="new.html">New</a></li>
+            </ul>
 
-        <div class="navbar-titles">
-            <h3><a href="../index.html">Home</a></h3>
-            <h3><a href="./popular.html">Popular</a></h3>
-            <h3><a href="./new.html">New</a></h3>
-        </div>
-       
+            <div class="searchbar">
+                <form action="" class="search" id="search-bar" >
+                    <input type="search" placeholder="Search movie..." class="search-input">
+                    
+                        <i class="fas fa-search" id="search-icon"></i>
+                   
+                </form>
+            </div>
 
-        <div class="searchbar">
-            <form action="" class="search" id="search-bar" >
-                <input type="search" placeholder="Search movie..." class="search-input">
-                
-                    <i class="fas fa-search" id="search-icon"></i>
-               
-            </form>
-        </div>
+            <div class="join-box">
+                <button class="btn join-btn">Join now</button>
+                <button class="btn ">Sign in</button>
+            </div>
 
-        <div class="join-box">
-            <button class="btn join-btn">Join now</button>
-            <button class="btn ">Sign in</button>
-        </div>
-    </nav>
- 
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
     <!--MAIN SECTION-->
 <section class="main-pop main">

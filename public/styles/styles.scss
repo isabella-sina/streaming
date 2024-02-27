@@ -4,6 +4,10 @@
 @import "homepage";
 @import "swiper";
 @import "search";
+@import "mediaquery";
+
+
+
 
 
 //NAVBAR
@@ -22,23 +26,51 @@
     top: 0;  
 }
 
+
+.logo{
+    height: 35px;
+}
+
+.line{
+    background-color: #fff;
+}
+
 .navbar-titles{
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
     margin-left: 5%;
+    margin-right: 5%;
     
-
-    h3{
+    li{
         margin-left: 2vw;
     }
 
     a{
         text-decoration: none;
+        display:block;
         color: #fff;
+        font-weight: 900;
+        font-size: 1.2em;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    a:hover{
+        color: #dd0e15;
+        transition: 0.2s;
+    }
+
+    a.active{
+        color: #dd0e15;
+        font-size: 1.3em;
     }
     
+}
+
+li{
+    list-style-type: none;
 }
 
 .fa-search{
@@ -49,31 +81,9 @@
 }
 
 
-//searchbar
-
-
-.searchbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1 auto;
-    width: 20%;
-    
-    z-index: 2;
-    input{
-        height: 40px;
-        width: 30vh;
-        border-radius: 25px;
-    }
-}
 
 
 
-
-.logo{
-    height: 45px;
-}
 
 .join-box{
     display: flex;
@@ -81,7 +91,8 @@
     align-items: center;
     height: auto;
     flex: 1 1 auto;
-    margin-left: 5%;
+    margin-right: 2vw;
+    margin-left: 2vw;
 }
 
 
@@ -95,6 +106,8 @@
     margin-left: 10px;
     text-transform: uppercase;
     cursor: pointer;
+    min-width: 90px ;
+    font-weight: 600;
 }
 
 .join-btn{
@@ -102,5 +115,3 @@
     border-color: #dd0e15;
 }
 
-
-//add special category highlights

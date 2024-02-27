@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/:id', (req, res) =>{
-    res.sendFile(path.join(initial_path, ".public/about.html"));
+    res.sendFile(path.join(initial_path, "public/about.html"));
 })
 
 app.use((req, res) => {

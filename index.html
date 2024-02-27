@@ -12,39 +12,41 @@
 
 <body>
     
+
+ 
     <!--NAVBAR-->
-    <nav class="navbar">
-        <img src="./public/img/logo.svg" class="logo" alt="">
-
-      
-        <div class="navbar-titles">
-            <h3><a href="./index.html">Home</a></h3>
-            <h3><a href="./public/popular.html">Popular</a></h3>
-            <h3><a href="./public/new.html">New</a></h3>
-        </div>
-       
-
-       <!-- <div class="searchbar">
-            <i class="fas fa-search" id="go-search"></i>
-            <input id="search-movie" type="search" data-search placeholder="Search..."> 
-        </div>
-        -->
-
-<div class="searchbar">
-    <form action="" class="search" id="search-bar" >
-        <input type="search" placeholder="Search movie..." class="search-input">
-        
-            <i class="fas fa-search" id="search-icon"></i>
-       
-    </form>
-</div>
-
-        <div class="join-box">
-            <button class="btn join-btn">Join now</button>
-            <button class="btn ">Sign in</button>
-        </div>
-    </nav>
    
+    <header>
+        <nav class="navbar-new">
+            <img src="./public/img/logo.svg" class="logo" alt="">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="./public/popular.html">Popular</a></li>
+                <li><a href="./public/new.html">New</a></li>
+            </ul>
+
+            <div class="searchbar">
+                <form action="" class="search" id="search-bar" >
+                    <input type="search" placeholder="Search movie..." class="search-input">
+                    
+                        <i class="fas fa-search" id="search-icon"></i>
+                   
+                </form>
+            </div>
+
+            <div class="join-box">
+                <button class="btn join-btn">Join now</button>
+                <button class="btn ">Sign in</button>
+            </div>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
  
 
     <!--MAIN SECTION-->
@@ -62,6 +64,7 @@
  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
  <script src="./public/js/swiper.js"></script>
  <script src="./public/js/home.js"></script>
+ <script src="./public/js/hamburgerMenu.js"></script>
  
  
 
