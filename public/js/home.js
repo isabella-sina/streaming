@@ -74,13 +74,6 @@ function initializeHomepageSwiper() {
 };   
        
 
-const searchGo = document.querySelector("#search-bar");
 
-
-
-searchGo.onclick = function(){
-    console.log("clicked searchbar");
-    window.location.href="./search.html";
-}
 
 

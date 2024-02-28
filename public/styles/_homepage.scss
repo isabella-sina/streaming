@@ -17,6 +17,10 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    position: fixed;
+    z-index: 1;
+    background-color: #000;
+    width: 100%;
 }
 
 .nav-menu{
@@ -89,7 +93,8 @@ a{
     //background-image: linear-gradient(to bottom, transparent, #181818), url("https://image.tmdb.org/t/p/original/ehumsuIBbgAe1hg343oszCLrAfI.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .homepage{

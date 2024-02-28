@@ -1,11 +1,16 @@
-//serchbar
-//document.getElementById("search-movie").onclick = function () {
- //   location.href = "search.html";
-//};
 
-const searchInput = document.querySelector("[data-search]");
+const searchInput = document.querySelector(".search-input");
 const searchContainer = document.querySelector(".search-container");
+const s = document.querySelector(".searchbar");
+const iconX = document.querySelector(".fa-times");
+const iconSearch = document.querySelector(".fa-search");
 
+s.addEventListener("click", () => {
+    searchContainer.classList.toggle("active");
+    iconX.classList.toggle("active");
+    iconSearch.classList.toggle("active");
+    
+})
 
 searchInput.addEventListener("input", (e) =>{
     console.log(e.target.value);

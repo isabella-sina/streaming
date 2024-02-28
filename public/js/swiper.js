@@ -89,7 +89,7 @@ const makeCards = (id, data_movie_list) => {
             if(item.title.length > 30){
                 title = item.title.substring(0,28) + '...';
             }
-            console.log(location.href);
+           
 
             movieContainer.innerHTML +=  `
             <div class="swiper-slide">

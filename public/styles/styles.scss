@@ -7,8 +7,26 @@
 @import "mediaquery";
 
 
+//search results
+.search-container{
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 1%;
+    background-color: rgba($color: #181818, $alpha: 0.95);
+    position: fixed;
+    top: 60px;
+    left: 5vw;
+    visibility: hidden;
+}
 
-
+.search-container.active{
+    visibility: visible;
+}
 
 //NAVBAR
 .navbar{
@@ -73,13 +91,30 @@ li{
     list-style-type: none;
 }
 
-.fa-search{
+.search-icon{
     color: #dd0e15;
     margin-right: 10px;
     font-size: 1.6rem;
-    margin-left: 10px
+    margin-left: 10px;
 }
 
+.fa-search{
+    visibility: hidden;
+}
+
+.fa-search.active{
+    visibility: visible;
+}
+
+.fa-times{
+    visibility: hidden;
+}
+
+.fa-times.active{
+    visibility: visible;
+    position: relative;
+    right: 40px;
+}
 
 
 
