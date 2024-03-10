@@ -55,7 +55,7 @@ const makeSearchCard = (movie) => {
 
 
         searchContainer.innerHTML +=  `
-        <div class="movie-cards search-result">
+        <div class="movie-cards search-result" onclick="location.href ='/${movie.id}'">
             <img src="${img_path}" alt="">
             <p class="heading-card">${title}</p>
         </div>         
