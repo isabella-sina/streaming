@@ -6,14 +6,15 @@ const iconX = document.querySelector(".fa-times");
 const iconSearch = document.querySelector(".fa-search");
 
 s.addEventListener("click", () => {
-    searchContainer.classList.toggle("active");
+    searchContainer.classList.toggle("active"); 
     iconX.classList.toggle("active");
     iconSearch.classList.toggle("active");
-    
+    console.log("clicked search");
 })
 
 searchInput.addEventListener("input", (e) =>{
     console.log(e.target.value);
+
 
     fetch(search_url + new URLSearchParams({
         query: e.target.value,
@@ -21,7 +22,7 @@ searchInput.addEventListener("input", (e) =>{
     }))
     .then(res => res.json())
     .then(data => {
-        //per ogni oggetto elemento di 'genres' prendiamo name e id
+        
         console.log(data);
         searchContainer.innerHTML =  " ";
         data.results.forEach((movie) => {

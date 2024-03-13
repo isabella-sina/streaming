@@ -61,7 +61,7 @@ const showMovieInfo = (data) => {
        }
     })
 
-    //fetching video clips
+    //fetching video trailers
     fetch (`${movie_details_url}${movie_id}/videos?` + new URLSearchParams({
         api_key: api_key
     }))
@@ -73,7 +73,7 @@ const showMovieInfo = (data) => {
 
        for(let i = 0; i < maxClips; i++){
             trailerContainer.innerHTML += `
-            <iframe width="560" height="315" class="trailer" src="https://youtube.com/embed/${data.results[i].key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen; web-share" allowfullscreen></iframe>
+            <iframe  class="trailer" src="https://youtube.com/embed/${data.results[i].key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen; web-share" allowfullscreen></iframe>
             `;
        }
        
@@ -91,12 +91,20 @@ const showMovieInfo = (data) => {
         console.log(data.results[i]);
             if(data.results[i].backdrop_path != null){
                 console.log(i);
+
+                var title = data.results[i].title;
+
+                if(title.length > 30){
+                    title = title.substring(0,28) + '...';
+                }
+
                 rec_container.innerHTML += `
-                <div class="movie" onclick="location.href = '/${data.results[i].id}'">
+                <div class="movie-recommendation" onclick="location.href = '/${data.results[i].id}'">
                     <img src="${img_url}${data.results[i].backdrop_path}" alt="">
-                    <p class="movie-title" >${data.results[i].title}</p>
+                    <p class="heading-card" >${title}</p>
                 </div>
                 `;
+
             }
           
        }
