@@ -1,7 +1,8 @@
-let movie_id = location.pathname;
+let params = window.location.search;
 console.log("movie_id");
+var urlParams = new URLSearchParams(params);
+var movie_id = "/" + urlParams.get('id');
 console.log(movie_id);
-
 //fetching movie details
 fetch (`${movie_details_url}${movie_id}?` + new URLSearchParams({
     api_key: api_key
