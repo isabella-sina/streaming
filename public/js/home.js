@@ -33,7 +33,7 @@ const fetchMoviesListByGenres = (genre_id, genre_name) => {
     .then(data => {
         console.log(genre_name);
         var categroyTitle = genre_name.split(' ')[0];
-        makeCategoryElement(`${categroyTitle}`, data.results, "main-home");
+        makeCategoryElement(`${categroyTitle}`, data.results, "main-home", "home");
 
         //background image, in futuro: seleziona il primo film in classifica del genere preferito dall'utente
         if(`${genre_name}`== "Animation"){

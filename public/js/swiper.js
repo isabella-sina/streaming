@@ -48,7 +48,7 @@ function initializeSwiper(category){
 
 const main = document.querySelector('.main');
 
-const makeCategoryElement = (category, data_category_sorted, container) => {
+const makeCategoryElement = (category, data_category_sorted, container, from) => {
     var categorySwiper = "swiper"+(category.split(' ')[0]);
     var categorySwiperNext = "swiper"+(category.split(' ')[0])+"-button-next";
     var categorySwiperPrev = "swiper"+(category.split(' ')[0])+"-button-prev";
@@ -72,11 +72,11 @@ const makeCategoryElement = (category, data_category_sorted, container) => {
     </div> 
     `;
 
-     makeCards(category, data_category_sorted);
+     makeCards(category, data_category_sorted, from);
 }
 
 
-const makeCards = (id, data_movie_list) => {
+const makeCards = (id, data_movie_list, from) => {
     const movieContainer = document.getElementById(id);
 
     data_movie_list.forEach( (item) =>{
@@ -91,9 +91,9 @@ const makeCards = (id, data_movie_list) => {
             if(item.title.length > 30){
                 title = item.title.substring(0,28) + '...';
             }
-           
 
-            movieContainer.innerHTML +=  `
+            if(from == "home"){
+                movieContainer.innerHTML +=  `
             <div class="swiper-slide"> 
                 <div class="movie-cards" onclick="location.href = './public/about.html?id=${item.id}'">
                     <img src="${img_url}${item.backdrop_path}" alt="">
@@ -102,6 +102,20 @@ const makeCards = (id, data_movie_list) => {
             </div>        
                   
             `;
+            }else{
+                movieContainer.innerHTML +=  `
+                <div class="swiper-slide"> 
+                    <div class="movie-cards" onclick="location.href = './about.html?id=${item.id}'">
+                        <img src="${img_url}${item.backdrop_path}" alt="">
+                        <p class="heading-card">${title}</p>
+                    </div>                   
+                </div>        
+                      
+                `;
+            }
+           
+
+        
             
             
         }
