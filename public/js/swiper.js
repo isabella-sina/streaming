@@ -95,7 +95,7 @@ const makeCards = (id, data_movie_list) => {
 
             movieContainer.innerHTML +=  `
             <div class="swiper-slide"> 
-                <div class="movie-cards" onclick="location.href = 'public/about.html?id=${item.id}'">
+                <div class="movie-cards" onclick="location.href = './public/about.html?id=${item.id}'">
                     <img src="${img_url}${item.backdrop_path}" alt="">
                     <p class="heading-card">${title}</p>
                 </div>                   
