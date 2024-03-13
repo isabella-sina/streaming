@@ -73,7 +73,7 @@ const showMovieInfo = (data) => {
 
        for(let i = 0; i < maxClips; i++){
             trailerContainer.innerHTML += `
-            <iframe width="560" height="315" src="https://youtube.com/embed/${data.results[i].key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" class="trailer" src="https://youtube.com/embed/${data.results[i].key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen; web-share" allowfullscreen></iframe>
             `;
        }
        

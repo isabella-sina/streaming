@@ -53,11 +53,13 @@ const makeCategoryElement = (category, data_category_sorted, container) => {
     var categorySwiperNext = "swiper"+(category.split(' ')[0])+"-button-next";
     var categorySwiperPrev = "swiper"+(category.split(' ')[0])+"-button-prev";
     var container = document.querySelector(`.${container}`);
+    var categoryTitle = category.split('-')[0];
+
 
      
     container.innerHTML += `    
     <div class="movie-list"> 
-    <h2>${category}</h2>
+    <h2>${categoryTitle}</h2>
         <div class="swiper-container">            
             <div class="swiper ${categorySwiper}">
                 <div class="swiper-wrapper" id="${category}">

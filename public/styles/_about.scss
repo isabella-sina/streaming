@@ -20,7 +20,7 @@
 }
 
 .movie-title{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -72,4 +72,8 @@ iframe{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.trailer{
+    margin-right: 2%;
 }

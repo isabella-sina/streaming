@@ -40,13 +40,14 @@ const fetchMoviesListByGenresNew = (genre_id, genre_name) => {
     .then(res => res.json())
     .then(data => {
         console.log(genre_name);
+        var categoryTitle = genre_name.split(' ')[0];
         //background image
         if(`${genre_name}`== "Animation"){
             const mainNew = document.querySelector(".main-new");
             mainNew.style.backgroundImage = `linear-gradient(to bottom, transparent, #181818), url(https://image.tmdb.org/t/p/original/${data.results[0].backdrop_path})`;
                         
         }
-        makeCategoryElement(`${genre_name}-new`, data.results, "main-new");
+        makeCategoryElement(`${categoryTitle}-new`, data.results, "main-new");
         initializeNewSwiper();
     })
     .catch(err => console.log(err));

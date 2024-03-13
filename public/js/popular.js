@@ -7,7 +7,7 @@ fetch(trending_url + new URLSearchParams({
 .then(data => {
     console.log(data);
     //per ogni oggetto elemento di 'genres' prendiamo name e id
-   makeCategoryElement("TrendingNow", data.results, "main-pop");
+   makeCategoryElement("Trending", data.results, "main-pop");
    
 });
 //posso mettere un trattino che poi sostituisco con uno spazio
@@ -40,20 +40,21 @@ const fetchMoviesListByGenresPopular = (genre_id, genre_name) => {
     .then(res => res.json())
     .then(data => {
         console.log(genre_name);
+        categoryTitle= genre_name.split(' ')[0];
          //background image
         if(`${genre_name}`== "Animation"){
             const mainPop = document.querySelector(".main-pop");
             mainPop.style.backgroundImage = `linear-gradient(to bottom, transparent, #181818), url(https://image.tmdb.org/t/p/original/${data.results[0].backdrop_path})`;
                         
         }
-        makeCategoryElement(`${genre_name}-pop`, data.results, "main-pop");
+        makeCategoryElement(`${categoryTitle}-pop`, data.results, "main-pop");
         initializePopSwiper();
     })
     .catch(err => console.log(err));
 }
 
 function initializePopSwiper() {
-    const swiperTrendingNow = initializeSwiper("TrendingNow");
+    const swiperTrendingNow = initializeSwiper("Trending");
     const swiperActionPop = initializeSwiper("Action-pop");
     const swiperAdventurePop = initializeSwiper("Adventure-pop"); 
     const swiperAnimationPop = initializeSwiper("Animation-pop");
