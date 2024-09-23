@@ -1,74 +1,68 @@
-@media (max-width:1150px){
-   
-    //navbar
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+@media (max-width: 1150px) {
+  //navbar
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    .hamburger{
-        display: block;
-    }
+  .hamburger {
+    display: block;
+  }
 
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-   
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-    .nav-menu{
-        position: fixed;
-        left: -100%;
-        top: 60px;
-        gap: 10vw;
-        flex-direction: row;
-        justify-content: center;
-        background-color: black;
-        padding: 1rem;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        margin-left: 0;
-        z-index: 2;
-    }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-    .nav-item{
-        margin: 16px 0;
-    }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 60px;
+    gap: 10vw;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $black;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    margin-left: 0;
+    z-index: 2;
+  }
 
-    .nav-menu.active{
-        left: 0;
-    }
-   
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
 }
 
+//searchbar
+@media (max-width: 900px) {
+  .searchbar {
+    position: fixed;
+    left: -100%;
+    top: 110px;
+    background-color: $black;
+    width: 100%;
+    padding: 0.6rem;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+  }
 
-
-@media (max-width:900px){
-   
-
-    .searchbar{
-        position: fixed;
-        left: -100%;
-        top: 110px;
-        background-color: black;
-        width: 100%;
-        padding: 0.6rem;
-        display: flex;
-        justify-content: center;
-        transition: 0.3s;
-    }
-
-    .searchbar.active{
-        left: 0;
-    }
-   
+  .searchbar.active {
+    left: 0;
+  }
 }

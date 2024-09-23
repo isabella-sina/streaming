@@ -1,84 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-   
-    
- 
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streaming</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!--NAVBAR-->
-   
+
     <header>
-        <nav class="navbar-new">
-            <img src="./img/logo.svg" class="logo" alt="">
-            <ul class="nav-menu">
-                <li><a href="../index.html" >Home</a></li>
-                <li><a href="./popular.html">Popular</a></li>
-                <li><a href="./new.html">New</a></li>
-            </ul>
+      <nav class="navbar-new">
+        <img src="./img/logo.svg" class="logo" alt="" />
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./popular.html">Popular</a></li>
+          <li><a href="./new.html">New</a></li>
+        </ul>
 
-            <div class="searchbar">
-                <form action="" class="search" id="search-bar" >
-                    <input type="search" placeholder="  Search movie..." class="search-input">
-                    
-                        <i class="fas fa-search search-icon active"></i>
-                        <i class="fas fa-times search-icon"></i>
-                </form>
-            </div>
+        <div class="searchbar">
+          <form action="" class="search" id="search-bar">
+            <input
+              type="search"
+              placeholder="  Search movie..."
+              class="search-input"
+            />
 
-            <div class="join-box">
-                <button class="btn join-btn">Join now</button>
-                <button class="btn ">Sign in</button>
-            </div>
+            <i class="fas fa-search search-icon active"></i>
+            <i class="fas fa-times search-icon"></i>
+          </form>
+        </div>
 
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
+        <div class="join-box">
+          <button class="btn join-btn">Join now</button>
+          <button class="btn">Sign in</button>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
 
-     <!--MOVIE INFORMATION-->
-     <div class="movie-info">
-        <div class="movie-detail">
-            <h1 class="movie-title">movie title </h1>
-            <p class="movie-date-genres" >2023 | Comedy</p>
-            <p class="movie-description" >Unlimited tv shows and movies,Unlimited tv shows and movies,Unlimited tv shows and movies,Unlimited tv shows and movies</p>
-            <p class="movie-starring"><span>Starring: </span></p>
-        </div>
-     </div>
+    <!--MOVIE INFORMATION-->
+    <div class="movie-info">
+      <div class="movie-detail">
+        <h1 class="movie-title">movie title</h1>
+        <p class="movie-date-genres">2023 | Comedy</p>
+        <p class="movie-description">
+          Unlimited tv shows and movies,Unlimited tv shows and movies,Unlimited
+          tv shows and movies,Unlimited tv shows and movies
+        </p>
+        <p class="movie-starring"><span>Starring: </span></p>
+      </div>
+    </div>
 
-     <!--VIDEO CLIPS-->
-     <section class="trailer-container">
-       <h1 class="details-heading">Trailers:</h1>
-     </section>
+    <!--VIDEO CLIPS-->
+    <section class="trailer-container">
+      <h1 class="details-heading">Trailers:</h1>
+    </section>
 
     <!--RECOMMENDATIONS-->
     <section class="recommendations">
-        <h1 class="details-heading" >More Like this:</h1>
-        <div class="recommendations-container">
-             <!--<div class="movie">
+      <h1 class="details-heading">More Like this:</h1>
+      <div class="recommendations-container">
+        <!--<div class="movie">
                 <img src="./img/poster.jpg" alt="">
                 <p class="movie-title" >movie name</p>
             </div>-->
-        </div>
+      </div>
     </section>
 
+    <section class="search-container"></section>
 
-    <section class="search-container">
-  
-    </section>
-
-    <script src="js/api.js" ></script>
-    <script src="js/about.js" ></script>
-    <script src="js/search.js" ></script>
-</body>
+    <script src="js/api.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/search.js"></script>
+  </body>
 </html>
